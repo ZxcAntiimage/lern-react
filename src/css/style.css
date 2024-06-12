@@ -1,3 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Serif+Text:regular,italic);
+
 body{
-    background-color:gray;
+    background-color:rgb(196, 239, 250);
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: rgb(7, 7, 7);
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+.header{
+    background-color: #0c0c0c;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+main{
+    background-color: rgb(84, 91, 134);
+    margin: 50px 100px;
+    width: 50%;
+    float: left;
+    border-radius: 5px;
+}
+aside{
+    width: 20%;
+    float: right;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+main .user{
+    margin-bottom: 50px;
+    background-color: #3e9fa0;
+    padding: 20px;
+    color: white;
+}
+
+.delete-icon{
+    float: right;
+    color: #134b57;
+    cursor: pointer;
+    transform: scale(2.2);
+}
+
+.edit-icon{
+    float: right;
+    color: #0e3e47;
+    cursor: pointer;
+    margin-right: 25px;
+    transform: scale(2.2);
+}
+
+.edit-icon, .delete-icon:hover{
+    opacity: 0.5;
+}
+
+input:not([type="checkbox"]), textarea, button {
+    width: 90%;
+    padding: 15px 5%;
+    font-family: "DM-Regular";
+    font-weight: 400;
+    border: 2px solid #5a5a5a;
+    color: #ffffff;
+    background-color: #005e83;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+input[type="checkbox"]{
+    margin: 10px;
+}
+
+button{
+    width: 100%;
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+    opacity: 0,7;
 }
